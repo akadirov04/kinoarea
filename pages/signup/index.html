@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.scss">
+</head>
+<body>
+    <!-- <div class="signupcontainer"> -->
+        <div class="signup">
+            <h1>Зарегистрироваться</h1>
+            <!-- <img class="close" src="../../img/close.png" alt=""> -->
+            <form>
+                <input type="text" name="name"  placeholder="Имя">
+                <input type="email" name="email"  placeholder="Номер телефона или e-mail">
+                <input type="password" name="password"  placeholder="Придумайте пароль">
+                <button class="reg">Зарегистрироваться</button>
+            </form>
+        </div>
+    <!-- </div> -->
+     <style>
+                html {
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .signup {
+                text-align: center;
+                position: relative;
+            }
+            .close {
+                position: absolute;
+                right: 300px;
+                cursor: pointer;
+                bottom: 450px;
+            }
+            .signup h1 {
+                color: rgb(255, 255, 255);
+                font-family: Qanelas;
+                font-size: 40px;
+                font-weight: 800;
+                line-height: 50px;
+                letter-spacing: 0%;
+                /* text-align: left; */
+                padding-bottom: 34px;
+            }
+     </style>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

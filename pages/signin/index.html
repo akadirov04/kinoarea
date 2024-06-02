@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.scss">
+</head>
+<body>
+</head>
+<body>
+
+<div class="signIn visible">
+    <h1>Войти</h1>
+    <form>
+        <input type="email" name="email" placeholder="Логин, почта или телефон">
+        <input type="password" name="password" placeholder="Ваш пароль">
+        <button class="reg">Войти</button>
+        <button class="sig">Зарегистрироваться</button>
+    </form>
+    <a href="#" id="resetLink">Восстановить пароль</a>
+</div>
+
+<div class="modalreset hidden" id="modalReset">
+    <h1>Восстановить пароль</h1>
+    <form>
+        <input type="text" id="emailReset">
+        <button class="reset">Reset Password</button>
+    </form>
+</div>
+    <style>
+    html {
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        color: rgb(255, 255, 255);
+        font-family: Qanelas;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 0%;
+        /* text-align: left; */
+        padding-bottom: 34px;
+    }
+    .signIn a {
+        color: rgb(54, 87, 203);
+        font-family: Qanelas;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 166.5%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-decoration-line: underline;
+    }
+    .signIn {
+        text-align: center;
+        position: relative;
+    }
+    .close {
+        position: absolute;
+        right: 550px;
+        cursor: pointer;
+        bottom: 400px;
+    }
+    .emailReset {
+        margin-top: 20px;
+    }
+
+    .modalreset {
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    </style>
+                
+    <script type="module" src="script.js"></script>
+</body>
+</html>
